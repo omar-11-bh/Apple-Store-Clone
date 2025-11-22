@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Mon Panier</title>
+    <style>
+        .back-btn{
+            margin-top: 35px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="image/favicon2.png" alt="Apple icon" class="logo-icon">
+            <span>Apple</span>
+        </a>
+        <nav class="navigation">
+          <a href="credit.html" target="_blank"> | CREDIT | </a>
+          <a href="index.html"> | ACCUEIL | </a>
+          <a href="#contact"> | CONTACT |</a>
+        </nav>
+    </header>
+
+    <section class="panier-section">
+        <div class="panier-header">
+            <div class="header-actions">
+                <h1 class="title">Mon Panier</h1>
+                <a href="index.html" class="back-btn">Retour à l'accueil</a>
+            </div>
+        </div>
+
+        <div class="panier-content">
+            <div class="panier-items" id="panierItems">
+                <!-- Les articles seront injectés ici par JavaScript -->
+            </div>
+
+            <div class="panier-summary">
+                <h2>Résumé du panier</h2>
+                <div class="summary-row">
+                    <span>Sous-total :</span>
+                    <span id="subtotal">0,00 €</span>
+                </div>
+                <div class="summary-row">
+                    <span>Frais de port :</span>
+                    <span id="shipping">5,00 €</span>
+                </div>
+                <div class="summary-row total">
+                    <span>Total :</span>
+                    <span id="total">0,00 €</span>
+                </div>
+                <button class="checkout-btn" id="checkoutBtn">Procéder au paiement</button>
+                <button class="empty-cart-btn" id="emptyCartBtn">Vider le panier</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards-contact" id="contact">
+        <h2 class="title">Travaillons ensemble</h2>
+        <div class="contenu">
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <div class="info">
+                    <h3>phone</h3>
+                    <p>+33 745330780</p>
+                    <p>+33 7********</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="info">
+                    <h3>E-mail</h3>
+                    <p>mohamed.omar.ben.hammouda@outlook.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p class="footer-title">copyrights © <span>Med Omar</span></p>
+    </footer>
+
+    <script src="panier.js"></script>
+</body>
+</html>
